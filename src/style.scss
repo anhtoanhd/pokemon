@@ -1,0 +1,167 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Fira Sans', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  overflow: hidden;
+}
+
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  padding: 0 200px;
+  width: 1280px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 16px;
+  tr {
+    th,
+    td {
+      padding: 0 8px;
+      border-top: 1px solid #bdbdbd;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+}
+.modal {
+  overflow: hidden;
+}
+
+.type {
+  display: inline-block;
+  width: 66px;
+  border: 1px solid #a3a3a3;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  background: #dbdbdb;
+  & + .type {
+    margin-left: 4px;
+  }
+  &.grass {
+    background: #7c5;
+  }
+  &.poison {
+    background: #a59;
+  }
+  &.ground {
+    background: #db5;
+  }
+  &.fighting {
+    background: #b54;
+  }
+  &.ice {
+    background: #6cf;
+  }
+  &.electric {
+    background: #fc3;
+  }
+  &.water {
+    background: #39f;
+  }
+  &.fire {
+    background: #f42;
+  }
+  &.flying {
+    background: #89f;
+  }
+  &.psychic {
+    background: #f59;
+  }
+  &.bug {
+    background: #ab2;
+  }
+  &.rock {
+    background: #ba6;
+  }
+  &.ghost {
+    background: #66b;
+  }
+  &.dragon {
+    background: #76e;
+  }
+  &.dark {
+    background: #754;
+  }
+  &.steel {
+    background: #aab;
+  }
+  &.fairy {
+    background: #e9e;
+  }
+}
+
+.description {
+  margin-top: 32px;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 4px;
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #404040;
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+}
+.grid {
+  margin-top: 80px;
+  padding-top: 36px;
+  border-top: 1px solid #bdbdbd;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-column-gap: 32px;
+  grid-row-gap: 48px;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.modal-body {
+  padding: 0;
+}
+.back {
+  position: absolute;
+  left: 0;
+  top: 46px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.page-title {
+  font-size: 48px;
+  text-transform: capitalize !important;
+}

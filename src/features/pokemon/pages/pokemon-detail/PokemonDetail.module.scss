@@ -1,0 +1,69 @@
+.wrapper {
+  padding: 24px;
+  text-align: center;
+  position: relative;
+  .loading {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    img {
+      margin-top: 96px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .body {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    .image {
+      width: 256px;
+      height: 256px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .detail {
+      margin-left: 32px;
+      margin-top: 24px;
+      h2 {
+        text-align: left;
+      }
+      table {
+        td {
+          &:nth-child(1) {
+            text-align: right;
+            padding-right: 16px;
+          }
+          &:nth-child(2) {
+            text-align: left;
+            padding-left: 16px;
+          }
+        }
+      }
+    }
+  }
+  .other {
+    margin-top: 24px;
+    h2 {
+      text-align: left;
+    }
+    table {
+      th, td {
+        text-align: left;
+        vertical-align: baseline;
+        text-align: justify;
+        &.name {
+          width: 10%;
+        }
+        &.short-effect {
+          width: 35%;
+        }
+        &.effect {
+          width: 55%;
+        }
+      }
+    }
+  }
+}

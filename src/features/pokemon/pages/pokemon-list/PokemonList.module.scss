@@ -1,0 +1,31 @@
+.wrapper {
+  padding: 0 24px 24px;
+  text-align: center;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .banner {
+    width: 100%;
+  }
+  .load-more {
+    margin-top: 24px;
+    background-color: #30a7d7;
+    color: #fff;
+    font-size: 100%;
+    font-family: 'Flexo-Demi', arial, sans-serif;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    line-height: 125%;
+    padding: 0.75em 1.25em 0.675em;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: none;
+  }
+  .loading {
+    margin: 24px 0;
+    width: 24px;
+    height: 24px;
+  }
+}

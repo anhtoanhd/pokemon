@@ -1,0 +1,13 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #9c9c9c;
+  overflow: auto;
+  .main-content {
+    margin: 0 auto 0;
+    background-image: url(../../assets/images/bg.jpg);
+    background-size: cover;
+    background-color: #424242;
+    background-repeat: repeat-y;
+  }
+}
